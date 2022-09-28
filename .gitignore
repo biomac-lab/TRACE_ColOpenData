@@ -129,4 +129,6 @@ dmypy.json
 .pyre/
 
 # Data folder
-data/
+data/Census_2017-2018
+data/Multicity/Data/Raw_data
+data/Multicity/Data/Clean_data
