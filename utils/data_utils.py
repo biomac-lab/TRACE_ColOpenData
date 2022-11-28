@@ -1,10 +1,10 @@
 import os
-import config as cf
+# import config as cf
 import pandas as pd
 import numpy as np
 # from config_root.config import ROOT_DIR
 import json
-assert cf
+# assert cf
 
 def convert_sivigila_to_csv(list_years, path_to_read, path_to_save):
     ''' This function turns the multi-sheets sivigila files

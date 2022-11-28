@@ -7,7 +7,7 @@
 library(reticulate) # for Python interoperability
 
 # Load Python shell
-use_python("/Users/samueltorres/opt/anaconda3/bin/python") # path to Python environment
+use_python("C:/Users/juand/anaconda3/python.exe") # path to Python environment
 
 # Point to controller
 source_python("controller.py")

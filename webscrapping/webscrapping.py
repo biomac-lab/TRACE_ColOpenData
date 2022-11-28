@@ -1,9 +1,9 @@
 
 from selenium import webdriver
 
-EMAIL_ADD = 's.torresf@uninades.edu.co'    # Change this to your email address
+EMAIL_ADD = 'jd.umana10@uninades.edu.co'    # Change this to your email address
 PURPOSE_MSG = 'Data adquisition for TRACE-LAC project'    # Change this to your purpose message
-DRIVER_PATH = '/Users/samueltorres/Documents/Projects/TRACE_LATAM/app/model/webscrapping/chromedriver'
+DRIVER_PATH = '/Users/juand/Documents/GitHub/TRACE_ColOpenData/webscrapping/chromedriver'
 
 URL = 'http://portalsivigila.ins.gov.co/Paginas/Buscador.aspx'
 
@@ -13,7 +13,7 @@ def extract_sivigila_data(years, events):
     '''
     options = webdriver.ChromeOptions()
     # options.add_argument('--headless')
-    prefs = {"download.default_directory" : "/Users/samueltorres/Documents/Projects/TRACE_LATAM/data/Multicity/Data/Raw_data",
+    prefs = {"download.default_directory" : "/Users/juand/Documents/GitHub/TRACE_ColOpenData/data/Multicity/Data/Raw_data",
              "directory_upgrade": True}
     options.add_experimental_option("prefs", prefs)
     driver = webdriver.Chrome(options=options, executable_path=DRIVER_PATH)

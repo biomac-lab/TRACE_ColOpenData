@@ -1,8 +1,8 @@
 from selenium import webdriver
 
-EMAIL_ADD = 's.torresf@uninades.edu.co'    # Change this to your email address
+EMAIL_ADD = 'jd.umana10@uninades.edu.co'    # Change this to your email address
 PURPOSE_MSG = 'Data adquisition for TRACE-LAC project'    # Change this to your purpose message
-DRIVER_PATH = '/Users/samueltorres/Documents/Projects/TRACE_LATAM/app/model/webscrapping/chromedriver'
+DRIVER_PATH = '/Users/juand/Documents/GitHub/TRACE_ColOpenData/webscrapping/chromedriver'
 
 URL = 'http://portalsivigila.ins.gov.co/Paginas/Buscador.aspx'
 
@@ -11,7 +11,7 @@ class SivigilaWebScrap():
     def __init__(self):
         self.options = webdriver.ChromeOptions()
         self.options.add_argument('--headless')
-        self.prefs = {"download.default_directory" : "/Users/samueltorres/Documents/Projects/TRACE_LATAM/data/Multicity/Data/Raw_data",
+        self.prefs = {"download.default_directory" : "/Users/juand/Documents/GitHub/TRACE_ColOpenData/data/Multicity/Data/Raw_data",
                       "directory_upgrade": True}
         self.options.add_experimental_option("prefs", self.prefs)
         self.driver = webdriver.Chrome(options=self.options, executable_path=DRIVER_PATH)
